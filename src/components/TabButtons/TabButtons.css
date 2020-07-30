@@ -1,0 +1,19 @@
+.tab-buttons {
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    display: grid;
+}
+
+.tab-button {
+    text-align: center;
+    font-size: 2vh;
+}
+
+@media (max-width: 642px) {
+    .tab-buttons {
+        overflow: scroll;
+    }
+
+    .tab-buttons::-webkit-scrollbar {
+        display: none;
+    }
+}

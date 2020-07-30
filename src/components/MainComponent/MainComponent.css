@@ -1,0 +1,97 @@
+@import "../../components/QuestionCard/QuestionCard.css";
+@import "../../components/TabButtons/TabButtons.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button {
+    padding: 1vh 1vh;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button-green {
+    background-color: #4CAF50;
+    border: none;
+    border: 2px solid white;
+}
+
+.button-red {
+    background-color: #f44336;
+    border: none;
+    border: 2px solid white;
+}
+
+.button-green-bordered {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.main-component {
+    width: 100vw;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-appearance: none;
+}
+
+.main-component::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+    width: 0px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.right-arrow {
+    fill: green;
+}
+
+.next-question,
+.previous-question {
+    border: none;
+    height: 10vh;
+    width: 10vh;
+    max-width: 10vw;
+    max-height: 10vw;
+    padding: 0;
+    position: absolute;
+    top: 45vh;
+    border-radius: 50%;
+}
+
+.next-question {
+    background: no-repeat url("../../images/right-arrow-default.svg");
+    right: 0vw;
+}
+
+.previous-question {
+    background: no-repeat url("../../images/left-arrow-default.svg");
+    left: 0vw;
+}
+
+.next-question:hover {
+    background: no-repeat url("../../images/right-arrow-green.svg");
+}
+
+.previous-question:hover {
+    background: no-repeat url("../../images/left-arrow-green.svg");
+}
+
+.next-question:focus,
+.previous-question:focus {
+    outline: none;
+}
